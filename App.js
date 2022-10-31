@@ -6,10 +6,12 @@ export default function App() {
   function req(){
     
 
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
+  fetch('https://jsonplaceholder.typicode.com/posts/1',{
+    method:'DELETE',
+})
   .then(response => response.json())
   .then(function(json){
-    alert(json.id);
+    console.log(json);
   })
   }
 
